@@ -8,11 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DashboardPage } from '../pages/dashboard/dashboard'
 
+
+//CustomComponents
+import {MovieBrowsingTableComponent} from '../components/table/movie-browsing-table/movie-browsing-table'
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    DashboardPage
+    DashboardPage,
+    //CustomComponents
+    MovieBrowsingTableComponent
   ],
   imports: [
     BrowserModule,
