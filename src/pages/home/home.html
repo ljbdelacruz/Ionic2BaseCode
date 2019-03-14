@@ -7,8 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-input [(ngModel)]="userDetail.EmailAddress" type="text" class="secondary-text-color background-color-transparent border-line-bottom-1px-third secondary-text-color" placeholder="Email"></ion-input>
+  <ion-input [(ngModel)]="userDetail.Password" type="password" class="secondary-text-color background-color-transparent border-line-bottom-1px-third secondary-text-color margin-top-20px" placeholder="Password"></ion-input>
+  <button (click)="LoginOnClick()" ion-button clear icon-only class="float-right width-90-per third-bg-color primary-text-color">LOGIN</button>
 </ion-content>
