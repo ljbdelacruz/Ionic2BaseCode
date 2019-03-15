@@ -11,6 +11,8 @@ import { DashboardPage } from '../pages/dashboard/dashboard'
 
 //CustomComponents
 import {MovieBrowsingTableComponent} from '../components/table/movie-browsing-table/movie-browsing-table'
+import {ButtonDesign1Component} from '../components/buttons/button-design1/button-design1';
+import {UnderlinedTextboxComponent} from '../components/textboxes/underlined-textbox/underlined-textbox'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {MovieBrowsingTableComponent} from '../components/table/movie-browsing-ta
     HomePage,
     DashboardPage,
     //CustomComponents
-    MovieBrowsingTableComponent
+    MovieBrowsingTableComponent,
+    ButtonDesign1Component,
+    UnderlinedTextboxComponent
   ],
   imports: [
     BrowserModule,
