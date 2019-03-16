@@ -8,7 +8,9 @@
 
 <ion-content padding>
   <!-- <ion-input [(ngModel)]="userDetail.EmailAddress" type="text" class="secondary-text-color background-color-transparent border-line-bottom-1px-third secondary-text-color" placeholder="Email"></ion-input> -->
-  <underlined-textbox [(ngModel)]="userDetail.EmailAddress" placeholder="Email" type="text"></underlined-textbox>
-  <underlined-textbox  [(ngModel)]="userDetail.Password" type="password" placeholder="Password"></underlined-textbox>
-  <button-design1 (click)="LoginOnClick()" [buttonName]="buttonLabel"></button-design1>
+
+  <underlined-textbox [(ngModel)]="userDetail.EmailAddress" [placeholder]="emailModel.placeholder" type="{{emailModel.type}}"></underlined-textbox>
+  <underlined-textbox  [(ngModel)]="userDetail.Password" type="{{passwordModel.type}}" [placeholder]="passwordModel.placeholder"></underlined-textbox>
+
+  <button-design1 (click)="LoginOnClick()" [buttonName]="buttonModel.label" [addonClass]="buttonModel.classAddons" ></button-design1>
 </ion-content>

@@ -4,6 +4,13 @@ import { Component, Input } from '@angular/core';
   templateUrl: 'underlined-textbox.html'
 })
 export class UnderlinedTextboxComponent {
-  constructor() {
+  @Input() public addonClass:string;
+  @Input() public placeholder:string;
+  @Input() public type:string;
+  mystyle:string="utb-text-color utb-bg-color utb-borderlined ";
+  constructor(){}
+  ngOnInit(){
+    this.mystyle=this.mystyle+this.addonClass;
+    console.log(this.mystyle);
   }
 }
