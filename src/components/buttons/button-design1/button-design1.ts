@@ -13,7 +13,6 @@ export class ButtonDesign1Component {
   //entry point to update the ui design
   ngOnInit(){
     this.mystyle=this.mystyle+this.addonClass;
-    console.log(this.mystyle);
   }
 
 }

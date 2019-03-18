@@ -7,8 +7,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DashboardPage } from '../pages/dashboard/dashboard'
-
-
 //CustomComponents
 import {MovieBrowsingTableComponent} from '../components/table/movie-browsing-table/movie-browsing-table'
 import {ButtonDesign1Component} from '../components/buttons/button-design1/button-design1';

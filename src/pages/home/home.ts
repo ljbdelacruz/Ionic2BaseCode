@@ -4,6 +4,7 @@ import {UsersModel} from '../../services/model/Users.model'
 import { DashboardPage } from '../dashboard/dashboard'
 import {GeneralUIModel} from '../../components/model/generalUI.model'
 
+import {} from './components/table/movie-browsing-table/movie-browsing-table'
 
 @Component({
   selector: 'page-home',
